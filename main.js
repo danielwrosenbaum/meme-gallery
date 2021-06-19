@@ -12,7 +12,7 @@ var $addImageButton = document.querySelector('button');
 
 $addImageButton.addEventListener('click', (event) => {
   // console.log('click detected!', $imageUrlInput.value)
-  if ( $imageUrlInput !== '') {
+  if ( $imageUrlInput.value !== '') {
     imageUrls.push($imageUrlInput.value);
   }
   $imageUrlInput.value = '';
